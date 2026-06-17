@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_in/pages/HomePage.dart';
+import 'package:quiz_in/pages/LoginPage.dart';
+import 'package:quiz_in/pages/RecSenhaPage.dart';
+import 'package:quiz_in/pages/RespostasPage.dart';
 import 'package:quiz_in/routes/app_routes.dart';
 
 void main() {
