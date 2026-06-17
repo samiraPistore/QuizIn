@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 class Users {
   final String nome;
   final String email;
@@ -10,4 +9,22 @@ class Users {
     required this.senha,
     required this.pergunta,
   });
+
+  factory Users.formJson(Map<String, dynamic> json) {
+    return Users(
+      nome: json['nome'],
+      email: json['email'],
+      senha: json['senha'],
+      pergunta: json['pergunta'],
+    );
+  }
+
+  Map<String, dynamic> toMap() {
+    return <String, dynamic>{
+      'nome': nome,
+      'email': email,
+      'senha': senha,
+      'pergunta': pergunta,
+    };
+  }
 }
