@@ -3,5 +3,6 @@ class AppRoutes {
   static const recSenha = '/rec_senha';
   static const home = '/home';
   static const respostas = 'resps';
+  static const perguntas = '/perguntas';
   
 }

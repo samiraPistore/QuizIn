@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_in/components/TemaList.dart';
+import 'package:quiz_in/data.dart';
+import 'package:quiz_in/models/PrguntasModel.dart';
 import 'package:quiz_in/routes/app_routes.dart';
 
 class HomePage extends StatelessWidget {
@@ -6,6 +9,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final quizes = quizzes;
     return Scaffold(
       backgroundColor: Color(0xFFEDEDED),
       body: Center(
@@ -48,7 +52,8 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text('Quizes', style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),),
                 ],
-              )
+              ),
+              Quizlist(quizzes: quizes)
             ],
           ),
         ),
