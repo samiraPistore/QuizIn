@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_in/models/UserModel.dart';
 import 'package:quiz_in/routes/app_routes.dart';
 
 class LoginForm extends StatefulWidget {
@@ -12,11 +11,6 @@ class LoginForm extends StatefulWidget {
 class _LoginFormState extends State<LoginForm> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
-  final _senhaController = TextEditingController();
-
-
-
-    
 
   @override
   Widget build(BuildContext context) {

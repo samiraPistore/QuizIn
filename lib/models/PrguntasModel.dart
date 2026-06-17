@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
@@ -28,11 +27,13 @@ class Perguntas {
   final String pergunta;
   final String  resposta;
   final String correta;
+  final String categoria;
   
   Perguntas({
     required this.pergunta,
     required this.resposta,
     required this.correta,
+    required this.categoria,
   });
 
 
@@ -41,6 +42,7 @@ class Perguntas {
       pergunta: json['pergunta'] as String,
       resposta: json['resposta'] as String,
       correta: json['correta'] as String,
+      categoria: json['categoria'] as String,
     );
   }
 

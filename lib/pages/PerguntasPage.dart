@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_in/components/MyAppBA.dart';
 import 'package:quiz_in/data.dart';
 
 class PerguntasPage extends StatefulWidget {
@@ -16,7 +17,10 @@ class _PerguntasPageState extends State<PerguntasPage> {
       body: Center(
         child: Padding(padding: EdgeInsets.all(20), child: Column(
           children: [
-            Text('Perguntas')
+            MYAppBar(),
+           Expanded(child: ListView.builder(itemCount: pergunt.length, itemBuilder: (context, index){
+            return Text(pergunt[index].pergunta);
+           }))
           ],
         )),
       ),
